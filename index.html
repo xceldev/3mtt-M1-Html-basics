@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Objective: The Project tos introduce several HTML elements and also the structures of these elements  -->
+<!-- Objective: The Project introduce several HTML elements, modern HTML5 tags were used and also the structures of these elements  -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,13 +13,20 @@
         <a href="#about">About</a>
       </nav>
     </header>
+    <hr />
+
     <main>
       <h1>Hello, World!</h1>
       <p>This is my first webpage!</p>
       <div>
-        <h2 id="about">About Me</h2>
-        <p>Hi, I’m a web explorer!</p>
-        <a href="https://adventures.com">Visit my blog!</a>
+        <summary>
+            <h2 id="about">About Me</h2>
+        </summary>
+        <img src="pattern.jpg" alt="pics" width="30%">
+        <details>
+            <p>Hi, I'm a web explorer!</p>
+            <a href="https://adventures.com">Visit my blog!</a>
+        </details>
       </div>
 
       <section>
@@ -27,22 +34,45 @@
         <p>HTML is amazing!</p>
       </section>
     </main>
-
+    <hr />
     <form>
-      <label for="name">Frist Name:</label>
-      <input type="text" id="name" name="name" />
+      <label for="name">First Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your first name"
+      />
       <br />
       <label for="lname">Last Name:</label>
-      <input type="text" id="lname" name="lname" />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="Enter your last name"
+      />
       <br />
-      <label for="name">EMail:</label>
-      <input type="email" id="name" name="name" />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+      <br />
+      <br />
+      <label for="comment">Comment:</label>
+      <br />
+      <textarea name="comment" id="comment"></textarea>
       <br />
       <input type="submit" value="Submit" />
     </form>
+    <hr />
 
     <footer>
-      <p>© 2025 My Web Adventures</p>
+      <center>
+        <p>© 2025 My Web Adventures</p>
+      </center>
     </footer>
   </body>
 </html>
