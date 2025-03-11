@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<!-- Objective: The goal of this Project introduce several new HTML elements, test the ability the design forms, simple blog, footer while using the appropriate element   -->
+<!-- Objective: "This project introduces HTML structure and builds essential skills for creating more advanced web pages."-->
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Basics</title>
   </head>
+
   <body>
-    <!-- simple blog -->
+    <!-- header -->
     <header>
       <h1>My Web Adventures</h1>
     </header>
@@ -15,61 +17,66 @@
       <a href="#about">About</a>
     </nav>
 
+    <!-- about section-->
+    <section id="about">
       <h1>Hello, World!</h1>
       <p>This is my first webpage!</p>
       <div>
-        <div>
-          <h2 id="about">About Me</h2>
-        </div>
+        <h2 id="about">About Me</h2>
         <img src="pattern.jpg" alt="pics" width="30%" />
         <div>
           <p>Hi, I'm a web explorer!</p>
           <a href="https://adventures.com">Visit my blog!</a>
         </div>
       </div>
-      <section>
-        <h2>Chapter 1: The Basics</h2>
-        <p>HTML is amazing!</p>
-      </section>
+    </section>
 
     <!-- form -->
-    <form>
-      <label for="name">First Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your first name"
-      />
-      <br />
-      <label for="lname">Last Name:</label>
-      <input
-        type="text"
-        id="lname"
-        name="lname"
-        placeholder="Enter your last name"
-      />
-      <br />
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-      />
-      <br />
-      <label for="comment">Comment:</label>
-      <br />
-      <textarea name="comment" id="comment"></textarea>
-      <br />
-      <input type="submit" value="Submit" />
-    </form>
-  
+    <section>
+      <h2>Chapter 1: The Basics</h2>
+      <p>HTML is amazing!</p>
+      <form>
+        <label for="name">First Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your first name"
+        />
+        <br />
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Enter your last name"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <br />
+        <label for="comment">Comment:</label>
+        <br />
+        <textarea name="comment" id="comment"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
     <!-- footer -->
     <footer>
-      <center>
+      <div>
+        <p>Email:</p>
+        <p>Phone:</p>
+      </div>
+      <div>
         <p>© 2025 My Web Adventures</p>
-      </center>
+      </div>
     </footer>
   </body>
 </html>
